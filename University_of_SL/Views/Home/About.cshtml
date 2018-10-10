@@ -1,0 +1,67 @@
+﻿@model IEnumerable<University_of_SL.Models.EnrollementDates>
+
+@{
+    ViewData["Title"] = "About the student statistics";
+}
+
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                Enrollment Date
+            </th>
+            <th>
+                Students
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelitem => item.EnrollementDate)
+                </td>
+                <td>
+                    @item.Studentcount
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<style>
+    [class = "col-"]{
+        background-color : Highlight;
+        border : 1px solid blue;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            One
+        </div>
+        <div class="col-md-4">
+            Two
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            Three
+        </div>
+        <div class="col-md-6">
+            Four
+        </div>
+        <div class="col-lg-2">
+            Five
+        </div>
+    </div>
+    <div class="row">
+        <div class="clearfix visible-xs"></div>
+        <div class="col-md-6">
+            Six
+        </div>
+    </div>
+</div>
