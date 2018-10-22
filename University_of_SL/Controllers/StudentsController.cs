@@ -37,7 +37,7 @@ namespace University_of_SL.Controllers
                 searchString = currentFilter;
             }
 
-            ViewData["CurrentFilter"] = searchString;
+            ViewData["currentFilter"] = searchString;
 
             var students = from s in _context.Students
                            select s;

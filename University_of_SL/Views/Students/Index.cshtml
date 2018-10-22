@@ -12,8 +12,8 @@
 <form action="Index" method="get">
     <div class="form-actions no-color">
         <p>
-            Find by name: <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" />
-            <input type="submit" name="search" value="search" class="btn btn-default" />
+            Find by name: <input type="text" name="searchString" value="@ViewData["currentFilter"]" />
+            <input type="submit" name="Search" value="Search" class="btn btn-primary" />
             <a asp-action="Index">back to list</a>
         </p>
     </div>
@@ -55,8 +55,8 @@
     </tbody>
 </table>
 @{ 
-    var preDisabled = !Model.hasPreviousPage ? "Disabled" : "";
-    var nextDisabled = !Model.hasNextPage ? "Disabled" : "";
+    var preDisabled = !Model.hasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.hasNextPage ? "disabled" : "";
 }
 <a asp-action="Index" 
         asp-route-sortOrder ="@ViewData["CurrentSort"]"

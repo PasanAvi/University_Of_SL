@@ -9,3 +9,14 @@ E:\Web examples\.net Core\University_of_SL\University_of_SL\obj\Debug\netcoreapp
 E:\Web examples\.net Core\University_of_SL\University_of_SL\obj\Debug\netcoreapp2.0\University_of_SL.dll
 E:\Web examples\.net Core\University_of_SL\University_of_SL\obj\Debug\netcoreapp2.0\University_of_SL.pdb
 E:\Web examples\.net Core\University_of_SL\University_of_SL\obj\Debug\netcoreapp2.0\University_of_SL.csprojAssemblyReference.cache
+E:\Github\University_Of_SL\University_of_SL\bin\Debug\netcoreapp2.0\University_of_SL.deps.json
+E:\Github\University_Of_SL\University_of_SL\bin\Debug\netcoreapp2.0\University_of_SL.runtimeconfig.json
+E:\Github\University_Of_SL\University_of_SL\bin\Debug\netcoreapp2.0\University_of_SL.runtimeconfig.dev.json
+E:\Github\University_Of_SL\University_of_SL\bin\Debug\netcoreapp2.0\University_of_SL.dll
+E:\Github\University_Of_SL\University_of_SL\bin\Debug\netcoreapp2.0\University_of_SL.pdb
+E:\Github\University_Of_SL\University_of_SL\obj\Debug\netcoreapp2.0\University_of_SL.csprojAssemblyReference.cache
+E:\Github\University_Of_SL\University_of_SL\obj\Debug\netcoreapp2.0\University_of_SL.csproj.CoreCompileInputs.cache
+E:\Github\University_Of_SL\University_of_SL\obj\Debug\netcoreapp2.0\University_of_SL.AssemblyInfoInputs.cache
+E:\Github\University_Of_SL\University_of_SL\obj\Debug\netcoreapp2.0\University_of_SL.AssemblyInfo.cs
+E:\Github\University_Of_SL\University_of_SL\obj\Debug\netcoreapp2.0\University_of_SL.dll
+E:\Github\University_Of_SL\University_of_SL\obj\Debug\netcoreapp2.0\University_of_SL.pdb
