@@ -4,6 +4,11 @@
     ViewData["Title"] = "Details";
 }
 
+<br />
+<br />
+<br />
+<br />
+
 <h2>Details</h2>
 
 <div>
@@ -37,17 +42,17 @@
                     <th>Course Title</th>
                     <th>Grade</th>
                 </tr>
-                    @foreach (var item in Model.Enrollments)
-                    {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Course.Title)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Grade)
-                    </td>
-                </tr>  
-                    }
+                @foreach (var item in Model.Enrollments)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Course.Title)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Grade)
+                        </td>
+                    </tr>
+                }
             </table>
         </dd>
     </dl>

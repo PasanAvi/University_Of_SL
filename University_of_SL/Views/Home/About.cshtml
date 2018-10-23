@@ -3,65 +3,97 @@
 @{
     ViewData["Title"] = "About the student statistics";
 }
+<br />
+<br />
+<br />
+<br />
 
-<h2>@ViewData["Title"]</h2>
+
 <h3>@ViewData["Message"]</h3>
 
-<table>
-    <thead>
-        <tr>
-            <th>
-                Enrollment Date
-            </th>
-            <th>
-                Students
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelitem => item.EnrollementDate)
-                </td>
-                <td>
-                    @item.Studentcount
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
-<style>
-    [class = "col-"]{
-        background-color : Highlight;
-        border : 1px solid blue;
-    }
-</style>
-<div class="container">
-    <div class="row">
-        <div class="col-md-8">
-            One
-        </div>
-        <div class="col-md-4">
-            Two
-        </div>
+
+<div class="row">
+    <div class="col-md-6">
+        <p>
+            <b>
+            University, institution of higher education, usually comprising a college of liberal arts and sciences and 
+            graduate and professional schools and having the authority to confer degrees in various fields of study.
+            A university differs from a college in that it is usually larger, has a broader curriculum, and offers
+            graduate and professional degrees in addition to undergraduate degrees. Although universities did not arise
+            in the West until the Middle Ages in Europe, they existed in some parts of Asia and Africa in ancient times.
+            </b>
+            <br />
+            <h4>Early Universities</h4>
+        <p>
+            <b>
+                The modern Western university evolved from the medieval schools known as studia generalia; they were
+                generally recognized places of study open to students from all parts of Europe. The earliest studia arose
+                out of efforts to educate clerks and monks beyond the level of the cathedral and monastic schools.
+                The inclusion of scholars from foreign countries constituted the primary difference between the studia
+                and the schools from which they grew.
+
+                The earliest Western institution that can be called a university was a famous medical school that arose
+                at Salerno, Italy, in the 9th century and drew students from all over Europe. It remained merely a medical
+                school, however. The first true university in the West was founded at Bologna late in the 11th century.
+
+                It became a widely respected school of canon and civil law. The first university to arise in northern Europe
+                was the University of Paris, founded between 1150 and 1170. It became noted for its teaching of theology,
+                and it served as a model for other universities in northern Europe such as the University of Oxford in
+                England, which was well established by the end of the 12th century. The Universities of Paris and Oxford
+                were composed of colleges, which were actually endowed residence halls for scholars.
+
+                These early universities were corporations of students and masters, and they eventually received their
+                charters from popes, emperors, and kings. The University of Naples, founded by Emperor Frederick II (1224),
+                was the first to be established under imperial authority, while the University of Toulouse, founded by Pope
+                Gregory IX (1229), was the first to be established by papal decree. These universities were free to govern
+                themselves, provided they taught neither atheism nor heresy. Students and masters together elected their own
+                rectors (presidents). As the price of independence, however, universities had to finance themselves.
+                So teachers charged fees, and, to assure themselves of a livelihood, they had to please their students.
+                These early universities had no permanent buildings and little corporate property, and they were subject
+                to the loss of dissatisfied students and masters who could migrate to another city and establish a place
+                of study there. The history of the University of Cambridge began in 1209 when a number of disaffected
+                students moved there from Oxford, and 20 years later Oxford profited by a migration of students from the
+                University of Paris.
+
+                From the 13th century on, universities were established in many of the principal cities of Europe.
+                Universities were founded at Montpellier (beginning of the 13th century) and Aix-en-Provence (1409) in France,
+                at Padua (1222), Rome (1303), and Florence (1321) in Italy, at Salamanca (1218) in Spain, at Prague (1348)
+                and Vienna (1365) in central Europe, at Heidelberg (1386), Leipzig (1409), Freiburg (1457), and Tübingen
+                (1477) in what is now Germany, at Louvain (1425) in present-day Belgium, and at Saint Andrews (1411) and
+                Glasgow (1451) in Scotland.
+                Until the end of the 18th century, most Western universities offered a core curriculum based on the seven liberal
+                arts: grammar, logic, rhetoric, geometry, arithmetic, astronomy, and music. Students then proceeded to study under 
+                one of the professional faculties of medicine, law, and theology.
+                Final examinations were grueling, and many students failed.
+            </b>
+        </p>
     </div>
-    <div class="row">
-        <div class="col-md-4">
-            Three
-        </div>
-        <div class="col-md-6">
-            Four
-        </div>
-        <div class="col-lg-2">
-            Five
-        </div>
-    </div>
-    <div class="row">
-        <div class="clearfix visible-xs"></div>
-        <div class="col-md-6">
-            Six
-        </div>
+    <div class="col-md-6">
+        <h2>@ViewData["Title"]</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        <b> Enrollment Date </b>
+                    </th>
+                    <th>
+                        <b> Students </b>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelitem => item.EnrollementDate)
+                        </td>
+                        <td>
+                            @item.Studentcount
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
     </div>
 </div>

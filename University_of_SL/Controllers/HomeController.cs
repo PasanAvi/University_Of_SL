@@ -39,7 +39,7 @@ namespace University_of_SL.Controllers
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Contact Us...";
 
             return View();
         }

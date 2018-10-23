@@ -15,8 +15,11 @@
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+    <style>
+    #Background_Image { background-image: url("http://university.cactusthemes.com/wp-content/uploads/2014/07/university-background-06.jpg?id=2634"); background-repeat: no-repeat; background-position: center; background-size: cover; width: 100%; height: 100% }
+    </style>
 </head>
-<body>
+<body id="Background_Image">
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -26,17 +29,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">University of SL</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">
+                    <img src="https://www.clipartmax.com/png/middle/71-718843_student-education-graduate-university-icon-university-icon-png.png" class="img-circle" alt="uni-icon" width="75" height="75" />
+                </a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Students" asp-action="Index">Students</a></li>
-                    <li><a asp-area="" asp-controller="Courses" asp-action="Index">Courses</a></li>
-                    <li><a asp-area="" asp-controller="Instructors" asp-action="Index">Instructors</a></li>
-                    <li><a asp-area="" asp-controller="Departments" asp-action="Index">Departments</a></li>
-
+                    <li><a asp-area="" asp-controller="Students" asp-action="Index"><b>Students</b></a></li>
+                    <li><a asp-area="" asp-controller="Courses" asp-action="Index"><b>Courses</b></a></li>
+                    <li><a asp-area="" asp-controller="Instructors" asp-action="Index"><b>Instructors</b></a></li>
+                    <li><a asp-area="" asp-controller="Departments" asp-action="Index"><b>Departments</b></a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About"><b>About</b></a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact"><b>Contact</b></a></li>
                 </ul>
             </div>
         </div>
